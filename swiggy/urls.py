@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from food.views import*
+from instamart.views import*
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cake/',cake,name='cake'),
+    path('booking/',booking,name='booking'),
 ]
